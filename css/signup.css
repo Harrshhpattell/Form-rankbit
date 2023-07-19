@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  * {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+body {
+  background-color: #f7ffe5;
+}
+
+.box {
+  width: 40rem;
+  background-color: white;
+  margin: 5% auto;
+  border-radius: 10px;
+}
+
+.form-box {
+  padding: 6% 10% 0 10%;
+}
+
+.form-box h1 {
+  font-size: 2rem;
+}
+
+.form-box h1,
+.form-box p {
+  text-align: center;
+  color: #0b2447;
+  font-family: "Lora", serif;
+}
+
+hr {
+  margin: 2% 0;
+  height: 5px;
+  background-color: #0b2447;
+  border: none;
+  border-radius: 50%;
+}
+
+label {
+  position: absolute;
+  background-color: white;
+  top: 12px;
+  left: 12px;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  margin: auto;
+  border: 1px solid #000;
+}
+
+input:focus ~ label {
+  transform: translateY(-23px);
+  padding: 0 7px;
+}
+
+.name {
+  top: 12px;
+  left: 12px;
+}
+
+.form {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-grp {
+  position: relative;
+  margin: 6% 0 0 0;
+  flex-basis: 45%;
+  flex-grow: 1;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 15px;
+  padding: 2%;
+  margin: 8% 0;
+  background-color: #27374d;
+  color: #dde6ed;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #dde6ed;
+  color: #27374d;
+}
+
+@media (max-width: 600px) {
+  .form {
+    flex-direction: column;
+    gap: 0;
+  }
+  .name {
+    left: 3%;
+  }
+  .form-grp {
+    position: relative;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .box {
+    padding: 5% 12%;
+    width: 90%;
+  }
+  .btn {
+    margin: 15% 0;
+    padding: 4%;
+  }
+}
